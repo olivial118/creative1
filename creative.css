@@ -1,0 +1,254 @@
+/* basic */
+body {
+  background-color: grey;
+}
+
+p {
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 23px;
+ text-align: center;
+}
+
+.old {
+  color: #F2EDE4;
+}
+
+h1, h2, h3 {
+ font-family: 'Kaushan Script', cursive;
+ text-align: center;
+}
+
+/* best book */
+.item1 {grid-area: header;}
+.item2 {grid-area: main;}
+.item3 {grid-area: review;}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main review';
+  grid-gap: 10px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+#heart p {
+  text-align: center;
+}
+
+.best {
+  float: left;
+  padding-right: 10px;
+}
+
+/* on sale photos */
+.onsale{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-column-gap: 0px;
+ grid-row-gap: 10px;
+ padding-top: 30px;
+}
+
+.image {
+   padding: 50px;
+   transition: transform .2s;
+   width: 330px;
+   height: 440px;
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-top: 20px;
+}
+
+.image:hover {
+   transform: scale(1.15);
+}
+
+
+/* event */
+.jzdbox1 {
+ width:550px;
+ background:#332f2e;
+ border-radius:5px;
+ overflow:hidden;
+ display:block;
+ margin-bottom:10px;
+ box-shadow:0 0 10px #201d1c;
+ margin:0 auto;
+ margin-top:0px;
+}
+
+.jzdcal {
+ padding:0 10px 10px 10px;
+ box-sizing:border-box!important;
+ background:#749d9e;
+ background: -webkit-linear-gradient(#749d9e, #b3a68b);
+ background: -o-linear-gradient(#749d9e, #b3a68b);
+ background: -moz-linear-gradient(#749d9e, #b3a68b);
+ background: linear-gradient(#749d9e, #b3a68b);
+}
+
+.jzdcalt {
+ font:18px 'Roboto';
+ font-weight:700;
+ color:#f7f3eb;
+ display:block;
+ margin:18px 0 0 0;
+ text-transform:uppercase;
+ text-align:center;
+ letter-spacing:1px;
+}
+
+.jzdcal span {
+ font:11px 'Roboto';
+ font-weight:400;
+ color:#f7f3eb;
+ text-align:center;
+ width:70px;
+ height:70px;
+ display:inline-block;
+ float:left;
+ overflow:hidden;
+ line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+ opacity:0.3;
+ content:'o';
+}
+
+.circle {
+ border:1px solid #f7f3eb;
+ box-sizing:border-box!important;
+ border-radius:200px!important;
+}
+
+span[data-title]:hover:after,
+.circle[data-title]:hover:after {
+ font:11px 'Roboto';
+ font-weight:400;
+ content:attr(data-title);
+ position:absolute;
+ margin:0 0 100px;
+ background:#282423;
+ border:1px solid #f7f3eb;
+ color:#f7f3eb;
+ padding:5px;
+ z-index:9999;
+ min-width:150px;
+ max-width:150px;
+}
+
+
+
+/* index */
+.main {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 50px;
+ height: 400px;
+ weight: 800px;
+}
+
+.mainex {
+ text-align: center;
+ font-size: 30px;
+ padding-bottom: 100px;
+ font-family: 'Kaushan Script', cursive;
+ text-align: center;
+}
+
+/* improve */
+.words {
+  padding-top: 10px;
+}
+.top {
+  padding-top: 70px;
+  text-align: center;
+}
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+input[type=tel], select {
+    width: 40%;
+    height: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+
+/* footer */
+.foot {
+ background-color: grey;
+ margin: 5px;
+ text-align: center;
+ text-decoration: none;
+}
+
+/* menu bar */
+nav li a{
+   display: flex;
+   justify-content: space-around;
+   color:  #F2EDE4;
+   text-align: center;
+   padding: 14px 16px;
+   font-family: 'Kaushan Script', cursive;
+   text-decoration: none;
+   font-size: 18px;
+}
+nav ul {
+   list-style-type: none;
+   margin-left: 60px;
+   margin-right: 60px;
+ /*  padding-bottom: 30px; */
+   overflow: hidden;
+   background-color: grey;
+   padding-left: 0;
+}
+nav li {
+   float: left;
+   margin-right: 50px;
+   margin-left: 30px;
+   margin-top: 20px;
+   border-radius: 60px;
+}
+nav li a:hover {
+  border-radius: 60px;
+  background-color: #778AAA;
+}
+.active {
+   background-color: #778AAA;
+}
+
